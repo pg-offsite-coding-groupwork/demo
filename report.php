@@ -77,7 +77,7 @@ $img = Azure::img($faceId);
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u8" class="ax_default box_1">
+      <div id="u8" class="ax_default box_1" style="width:auto;height:auto;">
         <div id="u8_div" class=""><img src='<?php echo $img; ?>' alt='' /></div>
         <!-- Unnamed () -->
         <div id="u9" class="text" style="display:none; visibility: hidden">
