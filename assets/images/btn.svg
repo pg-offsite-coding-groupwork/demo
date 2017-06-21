@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="279px" height="61px" viewBox="0 0 279 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="79.3556416%" y1="159.756324%" x2="-11.7567754%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#E6CB9B" offset="0%"></stop>
+            <stop stop-color="#C1A360" offset="17.9807858%"></stop>
+            <stop stop-color="#FFF0BE" offset="39.0702137%"></stop>
+            <stop stop-color="#E6C688" offset="62.9389463%"></stop>
+            <stop stop-color="#E0AE4C" offset="86.8457026%"></stop>
+            <stop stop-color="#80642E" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="-2.84217094e-14" y="0" width="261" height="43"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0621886322 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="263" height="45">
+            <rect x="-1" y="-1" width="263" height="45" fill="white"></rect>
+            <use xlink:href="#path-2" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.0" transform="translate(-48.000000, -2374.000000)">
+            <g id="Group-4" transform="translate(0.000000, 2379.000000)">
+                <g id="Group-6-Copy" transform="translate(57.000000, 0.000000)">
+                    <g id="Rectangle-6-Copy-5">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <use stroke="url(#linearGradient-1)" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-2"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

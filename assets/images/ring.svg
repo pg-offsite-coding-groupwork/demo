@@ -1,0 +1,25 @@
+
+<svg width="308px" height="308px" viewBox="34 213 308 308" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="20.6422291%" y1="35.3790399%" x2="87.5311906%" y2="88.7817847%" id="linearGradient-1">
+            <stop stop-color="#D1C492" stop-opacity="0.473505435" offset="0%"></stop>
+            <stop stop-color="#E9E3CA" stop-opacity="0.743778297" offset="31.1379375%"></stop>
+            <stop stop-color="#F6F4EA" stop-opacity="0.894885359" offset="67.8727009%"></stop>
+            <stop stop-color="#C0B27C" stop-opacity="0.571841033" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="37.5935718%" id="linearGradient-2">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="187.5" cy="366.5" r="150.5"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="301" height="301" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Oval-156" stroke="none" fill="none">
+        <use stroke="url(#linearGradient-1)" mask="url(#mask-4)" stroke-width="4" xlink:href="#path-3"></use>
+        <use stroke="url(#linearGradient-2)" stroke-width="6" xlink:href="#path-3"></use>
+    </g>
+</svg>
