@@ -16,7 +16,7 @@ $requestBody = <<<EOF
 EOF;
 $rs = Azure::POST('https://api.cognitive.azure.cn/face/v1.0/detect', $requestBody);
 // 如果要调试这个接口的返回值，请将下面一行取消注释
- echo '<hr />';var_dump($rs);echo '<hr />';exit;
+// echo '<hr />';var_dump($rs);echo '<hr />';exit;
 $faceId = $rs[0]['faceId'];
 
 // try to find a similar person in face list
@@ -32,6 +32,9 @@ EOF;
 $rs = Azure::POST('https://api.cognitive.azure.cn/face/v1.0/findsimilars', $requestBody);
 // 如果要调试这个接口的返回值，请将下面一行取消注释
 // echo '<hr />';var_dump($rs);echo '<hr />';exit;
+
+$second_image_id = $rs[1]["persistedFaceId"]
+$second_img = Azure::img($second_image_id)
 ?>
 
 <!DOCTYPE html>
@@ -71,54 +74,16 @@ $rs = Azure::POST('https://api.cognitive.azure.cn/face/v1.0/findsimilars', $requ
 
       <!-- Unnamed (Rectangle) -->
       <div id="u8" class="ax_default box_1">
-        <div id="u8_div" class=""></div>
+        <div id="u8_div" class="">
+					<img src='<?php echo $second_img; ?>' alt='' />
+		</div>
         <!-- Unnamed () -->
         <div id="u9" class="text" style="display:none; visibility: hidden">
           <p><span></span></p>
         </div>
       </div>
 	  
-	<br><br>
 	
-	
-	<?php
-            $msg = '';
-            switch ($rs['resultCode']) {
-                case 400:
-                    $msg = $rs['response'];
-                    break;
-            }
-            ?>
-            <?php
-            if ($msg !== '') {
-            ?>
-            <p class="text text-view intro"><?php echo $msg;?></p>  
-            <?php
-            } else {
-            ?>
-            <p class="text text-view intro">Similar persons: </p>  
-            <p class="text text-view intro">
-                <ul class='similar'>
-                    <?php
-                    foreach ($rs as $row) {
-                        $faceId = $row['persistedFaceId'];
-                        $img = Azure::img($faceId);
-
-                        if ($img) {
-                            ?>
-                    <li>
-                        <img src='<?php echo $img; ?>' alt='' />
-                    </li>
-                    <?php
-
-                        }
-                    }
-                    ?>
-                </ul>    
-            </p> 
-            <?php
-            }
-            ?>
 	  
     </div>
   </body>
