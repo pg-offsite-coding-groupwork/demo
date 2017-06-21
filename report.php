@@ -16,7 +16,7 @@ $requestBody = <<<EOF
 EOF;
 $rs = Azure::POST('https://api.cognitive.azure.cn/face/v1.0/detect', $requestBody);
 // 如果要调试这个接口的返回值，请将下面一行取消注释
-// echo '<hr />';var_dump($rs);echo '<hr />';exit;
+echo '<hr />';var_dump($rs);echo '<hr />';exit;
 $faceId = $rs[0]['faceId'];
 
 // try to find a similar person in face list
