@@ -6,6 +6,68 @@ if ($uid === 0) {
     $_SESSION['uid'] = $uid;
 }
 ?>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page 1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/page_1/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/page_1/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u0" class="ax_default heading_1">
+        <div id="u0_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u1" class="text">
+          <p><span>Ebiz IT Rocks!</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u2" class="ax_default image">
+        <img id="u2_img" class="img " src="images/page_1/u2.jpg"/>
+        <!-- Unnamed () -->
+        <div id="u3" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4" class="ax_default primary_button">
+        <div id="u4_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5" class="text">
+          <p><span>Go!</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+<!--
 <!DOCTYPE html>
 <html>
   <head>
@@ -58,3 +120,4 @@ if ($uid === 0) {
     </div>    
   </body>
 </html>
+-->
