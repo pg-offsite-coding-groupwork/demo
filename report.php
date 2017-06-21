@@ -37,8 +37,12 @@ $rs = Azure::POST('https://api.cognitive.azure.cn/face/v1.0/findsimilars', $requ
 // 如果要调试这个接口的返回值，请将下面一行取消注释
 // echo '<hr />';var_dump($rs);echo '<hr />';exit;
 
-//$second_image_id = $rs[1]["persistedFaceId"]
-//$second_img = Azure::img($second_image_id)
+$row = $rs[1];
+$faceId = $row['persistedFaceId'];
+$img = Azure::img($faceId);
+
+                        
+
 ?>
 
 <!DOCTYPE html>
@@ -79,7 +83,7 @@ $rs = Azure::POST('https://api.cognitive.azure.cn/face/v1.0/findsimilars', $requ
       <!-- Unnamed (Rectangle) -->
       <div id="u8" class="ax_default box_1">
         <div id="u8_div" class="">
-					
+					<img src='<?php echo $img; ?>' alt='' />
 		</div>
         <!-- Unnamed () -->
         <div id="u9" class="text" style="display:none; visibility: hidden">
@@ -87,10 +91,8 @@ $rs = Azure::POST('https://api.cognitive.azure.cn/face/v1.0/findsimilars', $requ
         </div>
       </div>
 	  
-	  <br>
-	  
-	  <br>
-	  
+
+	  <!--
 	  <?php
             $msg = '';
             switch ($rs['resultCode']) {
@@ -129,6 +131,7 @@ $rs = Azure::POST('https://api.cognitive.azure.cn/face/v1.0/findsimilars', $requ
             <?php
             }
             ?>
+			-->
 	
 	  
     </div>
